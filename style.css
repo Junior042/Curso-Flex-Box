@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner{
+  background-color: #ccc;
+  height: 200px;
+  display: flex;
+  flex-direction: row;/*ao add display flex, fica automaticamente com o flex-direction: row;*/
+  /*flex-direction contem os seguintes valores: column | row-reverse | column-reverse | row*/
+
+/*<--------------------------><---------------------------><-----------------------------------><--------------------------->*/
+
+  flex-wrap: nowrap;/*define se os items teram quebra de liha ou Não*/ /*o valor padrão dele vem como o "nowrap"*/
+  /*flex-wrap contem os seguintes valores: wrap | wrap-rever*/
+
+/*<--------------------------><---------------------------><-----------------------------------><--------------------------->*/
+
+  flex-flow: row nowrap;/*é uma forma resumida de usar o felx-direction e o flex-wrap, podendo usar os valores de ambos ao mesmo tempo*/
+
+/*<--------------------------><---------------------------><-----------------------------------><--------------------------->*/
+
+  justify-content: flex-start;/*serve para fazer alinhamentos horizontais, seu valor padrão é o flex-start*/
+  /*justify-content contem os seguintes valores: flex-end | center | apace-between | space-around*/
+
+  /*space-around é um valor que deixa os items alinhados ao centro só que com os mesmo espaçamento entre eles só que ele cria os espaços iguais inclusive nas estremidades*/
+  
+  /*space-between é um valor que deixa os items alinhados ao centro só que com os mesmo espaçamento entre eles para melhor aproveitamento do espaço do container*/
+
+/*<--------------------------><---------------------------><-----------------------------------><--------------------------->*/
+
+  align-items: stretch;/*responsavel pelo alinhamento vertical o align-items tem seu valor padrão é stretch ele define que os itens cresção igualmente*/
+
+  /*align-items contem os seguintes valores: flex-start | flex-end | center | baseline*/
+
+  /*valor baseline ele faz um alinhamento vetical basedo no conteudo*/
+
+/*<--------------------------><---------------------------><-----------------------------------><--------------------------->*/
+
+  align-content: stretch;/*faz alinhamento vertical só que os itens tem que estarem com quebra de linha, seu valor padrão é o stretch*/
+  /*align-items contem os seguintes valores: flex-start | flex-end | center | baseline*/
+
+}
+
+
+.item{
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  margin: 5px;
+}

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.conteiner{
+.container{
   background-color: #ccc;
   height: 200px;
   display: flex;
@@ -44,6 +44,22 @@
 
 }
 
+/*<---------------><---------------><---------------><---------------><---------------><---------------><--------------->*/
+/*Aula 2*/
+
+/*Propriedade Order: ; Serve basicamente para alterar a ordem dos items ou containers*/
+
+/*<---------------><---------------><---------------><---------------><---------------><---------------><--------------->*/
+/*O align-self: ; serve para alinhar só que tem um problema se o flex-direction: ; estiver com o valor (row) o align-self irá alinhar verticalmente caso o flex-direction esteja com o valor column o align-self  alinhará horizontalmente*/
+/*o align-self tem os seguintes valores: flex-start | flex-end | center | baseline | stretch */
+
+/*flex-grow: ; serve meio que para definir o tamanho dele */
+
+/*flex-basis: ; serve para definir a largura inicial do item ou container*/
+
+/*flex-sharink: ;  serve para que  o item diminua o tanto de vezes referente ao outro item.*/
+
+/*flex: ; é a forma resumida de escrever as propriedades: flex-grow - flex-basis - flex-sharink ;*/
 
 .item{
   background: #333;
